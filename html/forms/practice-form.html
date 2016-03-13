@@ -5,24 +5,39 @@
 </head>
 
 <body>
-
+<form name="foodform" action="success.html" method="post">
 <fieldset>
 	<div>
 		<label>Name:</label>
-		<input type="name" name="name">
+		<input type="text" name="name">
 	</div>
 	<div>
 		<label>Location:</label>
-		<input type="location" name="location">
+		<input type="text" name="location">
 	</div>
 	<div>
 		<label>Age:</label>
-		<input type="age" name="age">
+		<input type="number" name="age">
+	</div>
+
+	<div>
+		<label>Date you last ate:</label>
+		<input type="date" name="date">
+	</div>
+
+	<div>
+		<label>Create a Password:</label>
+		<input type="password" name="password">
+	</div>
+
+	<div>
+		<input type="checkbox" name="cb-agree" value="agree">
+		Check if you love food!
 	</div>
 </fieldset>
 
 
-<form action="success" method="post">
+
 <fieldset>
 	<div>
 		<label>Favorite Type of Food:</label>
@@ -33,9 +48,10 @@
 		</select>
 	</div>
 </fieldset>
+
+
+<button type="submit">Click this box to submit!</button>
 </form>
-
-
 </body>
 
 </html>
