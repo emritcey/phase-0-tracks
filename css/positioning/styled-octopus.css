@@ -2,3 +2,16 @@
 	margin-left: 200px;
 	margin-top: 150px;
 }
+
+#hat {
+	position:absolute;
+	left: 190px;
+	top: 80px;
+
+}
+
+#glasses {
+	position: absolute;
+	left: 251px;
+	top: 256px;
+}
