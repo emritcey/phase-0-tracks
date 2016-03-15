@@ -13,3 +13,11 @@
 .list {
 	font-size: .8em
 }
+
+a:link {
+	color: pink;
+}
+
+a:hover {
+	color:green;
+}
