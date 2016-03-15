@@ -21,3 +21,7 @@ a:link {
 a:hover {
 	color:green;
 }
+
+section.volunteer-gig ul > li {
+	color: red;
+}
