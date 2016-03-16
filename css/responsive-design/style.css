@@ -52,6 +52,19 @@ figcaption {
   text-align: right;
 }
 
+@media screen and (max-width: 500px ) {
+  img { 
+    display: none;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    color: red;
+  }
+}
+
 /*
 @media screen and (max-width: 500px) {
   body {
