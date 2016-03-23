@@ -30,4 +30,6 @@ if age == ""
 	age = nil
 end
 
-
+puts "This Hamster is #{name} and on a scale of 1-10 is this loud: #{volume}. 
+It's fur is #{fur_color}. It is #{good} that it is a good candidate for adoption.
+And is probably about #{age} years old."
