@@ -6,4 +6,4 @@
 # Press Button for correct floor 
 # Return to entering position, and turn to face doors.
 # Wait until doors open
-# Exit Elevator 
+# Advance forward to Exit Elevator 
