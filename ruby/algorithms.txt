@@ -1,0 +1,39 @@
+Elevator Pseudocode
+# Enter the Elevator 
+# Assuming Buttons are on the back right corner, advance until hit the wall and turn right 90 degrees
+# Advance until hit the wall and turn left 90 degrees, facing the floor buttons.
+# Ask for floor number and using this  input of floor number, select a button. 
+# for each number use if loop, if not number continue on number grid. 
+# Press Button for correct floor 
+# Return to entering position, and turn to face doors.
+# Wait until doors open
+# Advance forward to Exit Elevator 
+
+Driving Around a Block. 
+
+# Open Car Door 
+# Sit in Car Seat
+# put on seat belt
+# put keys in ignition
+# Put foot on brake pedal and start car
+# Put car in reverse 
+# Back car up 50 feet out of drive way.
+# put car in drive
+# Turn car left and advance forward 250 feet. 
+# stop at stop sign.
+# turn right and advance 500 feet.
+# stop at stop sign.
+# turn right and advance 500 feet.
+# stop at stop sign.
+# turn right and advance 500 feet.
+# stop at stop sign.
+# turn right and advance 250 feet.
+# Turn right into driveway
+# put car in park
+# turn off car
+# take keys out of ignition
+# Undo seatbelt 
+# open car door
+# exit the car
+# close car door
+# lock car
