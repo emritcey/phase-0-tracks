@@ -13,4 +13,10 @@ puts "is it a good candidate for adoption? (y/n)"
 good = gets.chomp
 # estimated Age
 puts "How old do you think it is?"
-age = gets.chomp.to_i
+age = gets.chomp
+if age == ""
+	age = nil
+end
+
+puts " it is #{age}" 
+
