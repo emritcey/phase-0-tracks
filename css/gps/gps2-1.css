@@ -1,0 +1,38 @@
+body {
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+header {
+  background-color: pink;
+  width: 79%;
+  padding: .5%;
+  margin: 1%;
+  text-align: center;
+}
+
+.column-1 {
+  display: inline-block;
+  width: 40%;
+}
+
+.column-2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+}
+
+article {
+  border: 2px solid green;
+  background-color: #CA9ADB;
+  padding-left: 15px;
+  columns: 2;
+  margin-bottom: 1%;
+  padding-bottom: 2%;
+  padding-right: 15px;
+}
+
+footer {
+  background-color: yellow;
+}
