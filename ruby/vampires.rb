@@ -47,9 +47,18 @@ puts "Health Insurance: #{health}, Garlic Bread: #{garlic}, #{actual_age}}"
 # is willing to eat garlic bread or sign up for insurance, t
 # he result is “Probably not a vampire.”
 
-#if (actual_age == age) && (garlic==false || health==false)
+if (actual_age == age) && (garlic==true || health==true)
+	puts "Probably not a Vampire"
+elsif (actual_age != age) && (garlic==false || health==false)
+	puts "Almost certainly a vampire."
+elsif name == ("Drake Cula" || "Tu Fang")
+	puts "Definitely a Vampire."
+else
+	puts "Results inconclusive."
+end
 # #If the employee got their age wrong, and hates garlic bread 
 # or waives insurance, the result is “Probably a vampire.”
+
 # If the employee got their age wrong, hates garlic bread, 
 # and doesn’t want insurance, the result is “Almost certainly a vampire.”
 
