@@ -1,3 +1,8 @@
+puts "How many employees will be taking this survey?"
+employee_number = gets.chomp.to_i
+
+while employee_number > 0 
+
 puts "What is your name?"
 name = gets.chomp
 
@@ -58,4 +63,6 @@ else
 	puts "Results inconclusive."
 end
 
+employee_number -= 1
+end
 ###########################
