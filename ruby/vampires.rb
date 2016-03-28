@@ -53,6 +53,31 @@ else
 end
 ###########################
 
+puts "Please list any allergies 1 at a time. Type 'done' when finished."
+allergies = gets.chomp
+
+when "sunshine"
+	puts "Probably a Vampire"
+when "done"
+	puts "Thanks"
+else 
+	#continues
+end 
+
+# if allergies=="sunshine"
+# 	allergies = true
+# else
+# 	allergies = false
+# end 
+
+# until allergies==true
+# 	puts "Any more allergies?"
+# 	allergies = gets.chomp
+# 	break if allergies =="done"
+# end
+
+
+
 if name == true
 	puts "Definitely a Vampire."
 elsif (actual_age != age) && (garlic==false || health==false)
@@ -64,5 +89,8 @@ else
 end
 
 employee_number -= 1
-end
+
 ###########################
+
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends."
+end
