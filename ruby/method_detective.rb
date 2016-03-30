@@ -4,10 +4,11 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
-puts "iNvEsTiGaTiOn".<???>
+a = "iNvEsTiGaTiOn"
+puts a[0].capitalize + a[1..-1]
 # # => “InVeStIgAtIoN”
 
-puts  "zom".<???>
+puts  "zom".insert(2, "o")
 # # => “zoom”
 
 puts "'" +"enhance".center(15) + "'"
@@ -17,11 +18,11 @@ puts "Stop! You’re under arrest!".upcase
 
 # => “STOP! YOU’RE UNDER ARREST!”
 
-a = "the usual"
+puts "the usual".insert(-1, " suspects")
 #=> “the usual suspects”
 
-b = " suspects"
 
+puts " suspects".insert(0, "the usual")
 #=> “the usual suspects”
 
 puts "The case of the disappearing last letter".chop
@@ -33,7 +34,7 @@ puts "The mystery of the missing first letter".delete("T")
 puts "Elementary  ,    my   dear      Watson!".split.join(" ")
 # => “Elementary, my dear Watson!”
 
-"z".<???>
+puts "z".ord
 # => 122 
 # (What is the significance of the mber 122 in relation to the character z?)
 
