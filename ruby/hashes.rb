@@ -42,6 +42,7 @@ new_client[:blue] = blue
 #Print back all information 
 p new_client
 
+#ask if they want to change a hash, take input
 puts "Would you like to change any of your answers? State which key you would like to change: name, decor, blue, age, children, or type done if all ok."
 key = gets.chomp
 
