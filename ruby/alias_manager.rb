@@ -1,13 +1,14 @@
 # Ask for real name and store.
+# Break up first and last name
+# Swap the first and last name
 puts "What is your first and last name?"
 full_name = gets.chomp.downcase!
-puts full_name
+name = full_name.split(' ').reverse!
 
-# Break up first and last name
+puts name
 
-# Swap the first and last name
 
-# change all vowels ot the next vowel 
+# change all vowels to the next vowel 
 
 # change all consonants to the next consonant 
 
