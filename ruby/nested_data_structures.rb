@@ -1,5 +1,5 @@
 international_foods = {
-	italian: {
+	italian_food: {
 		country_info: {
 			population_in_mil = 59,
 			pizzas_eaten_per_day = 2000
@@ -22,7 +22,7 @@ international_foods = {
 		]
 
 	}
-	mexican: {
+	mexican_food: {
 		country_info: {
 			population_in_mil = 122
 			tacos_eaten_per_day = 5000
