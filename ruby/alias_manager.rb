@@ -33,7 +33,7 @@ end
 ###############
 # change all consonants to the next consonant 
 def next_consonant(letter)
-	c_alphabet = "bcdfghjklmnpqrstvqwxyz"
+	c_alphabet = "bcdfghjklmnpqrstvqwxyzb"
  	x = c_alphabet.index(letter)
   	x += 1
 	 c_alphabet[x]
