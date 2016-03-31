@@ -1,7 +1,7 @@
 international_foods = {
 	italian: {
 		country_info: {
-			population_in_mil = 59.83,
+			population_in_mil = 59,
 			pizzas_eaten_per_day = 2000
  
 		}
@@ -23,8 +23,21 @@ international_foods = {
 
 	}
 	mexican: {
-		tacos: []
-		burritos: []
+		country_info: {
+			population_in_mil = 122
+			tacos_eaten_per_day = 5000
+		}
+		appetizers: [
+			'tamales',
+			'chips and salsa'
+			'queso',
+		]
+		mains: [
+			'tacos',
+			'burritos',
+			'enchiladas',
+			'tostadas'
+		]
 	}
 
 }
