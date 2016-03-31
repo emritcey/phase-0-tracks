@@ -33,7 +33,7 @@ end
 ###############
 # change all consonants to the next consonant 
 def next_consonant(letter)
-	c_alphabet = "bcdfghjklmnpqrstvqxyz"
+	c_alphabet = "bcdfghjklmnpqrstvqwxyz"
  	x = c_alphabet.index(letter)
   	x += 1
 	 c_alphabet[x]
@@ -59,3 +59,8 @@ new = new_letters.join.split(' ').each { |x| x.capitalize!}.join(' ')
 
 puts "#{full} is now known as #{new}."
 
+
+
+
+
+		
