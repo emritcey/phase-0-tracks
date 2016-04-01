@@ -1,11 +1,21 @@
+
 # Ask for real name and store.
 # Break up first and last name
 # Swap the first and last name
 
-puts "What is your first and last name?"
+
+puts "Type 'quit' to exit or 'continue' to get code name. "
+quit = gets.chomp.downcase
+full = nil
+
+until (quit == "quit" || full == "quit")
+
+
+puts "What is your first and last name? Type quit now to exit."
 full = gets.chomp
 full_name = full.downcase
 name = full_name.split(' ').reverse!.join(' ')
+
 
 #p name
 
@@ -58,9 +68,6 @@ end
 new = new_letters.join.split(' ').each { |x| x.capitalize!}.join(' ')
 
 puts "#{full} is now known as #{new}."
+puts " "
 
-
-
-
-
-		
+end
