@@ -36,3 +36,51 @@ rufus.roll_over
 rufus.dog_years(7)
 rufus.shake("left")
 rufus.shake(7)
+
+# ----------------------------
+# Define Dancer Class 
+
+# Def Initialize 
+
+# Instance 1: 
+
+# Instance 2: 
+
+# Loop 50 times. 
+
+# Store loop information into a data structure. Array 
+
+# Iterate over data structure with .each to call method on each instance. 
+
+class Dancer
+  def initialize
+    puts "Initializing dancer... "
+  end
+  
+  def spin(number)
+    number.times { puts "Look at me spin!" }
+  end
+  
+  def prop(item)
+    puts "I am dancing with a #{item}!"
+  end
+end
+
+index = 0 
+dancers = {}
+
+while index < 50
+  puts "What is the dancer's name?"
+  name = gets.chomp
+  input = name 
+  name = Dancer.new
+  dancers[input] = name
+  index += 1 
+end
+
+dancers.each do |input, name|
+  puts " "
+  puts "#{input} says: "
+  name.spin(2)
+  name.prop("baton")
+end 
