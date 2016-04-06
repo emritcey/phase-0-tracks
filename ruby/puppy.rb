@@ -1,5 +1,5 @@
 # SPECIES ------------------------
-# Puppy Dog
+# Puppy 
 
 # CHARACTERISTICS ----------------
 # Soft Fur: yes
@@ -16,3 +16,13 @@
 # Bark
 # Run
 # Nap
+
+class Puppy
+	leg_count = 4 
+	soft_fur = true
+	energy_level = 100
+
+	def fetch
+		puts "Puppy got the ball!"
+	end
+end 
