@@ -1,4 +1,7 @@
 class Santa 
+	attr_reader :gender, :ethnicity 
+	# attr_accessor :gender
+	
 	def initialize(gender, ethnicity)
 		@gender = gender
 		@ethnicity = ethnicity 
@@ -25,14 +28,6 @@ class Santa
 		@reindeer_ranking.push(reindeer)
 		puts "New order: #{@reindeer_ranking}"
 	end
-	
-	def gender
-		p @gender
-	end
-	
-	def ethnicity
-		p @ethnicity
-	end
 end 
 
 santas = []
@@ -45,7 +40,7 @@ santas.each do |name|
 	name.eat_milk_and_cookies("Chocolate")
 	name.celebrate_birthday
 	name.get_mad_at("Rudolph")
-	name.gender
-	name.ethnicity
+	puts  name.gender
+	puts name.ethnicity
 	puts " "
 end
