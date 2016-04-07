@@ -7,7 +7,7 @@ class Santa
 		@ethnicity = ethnicity 
 		@age = (0..140).to_a
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		puts "Initializing Santa instance ..."
+		#puts "Initializing Santa instance ..."
 	end
 
 	def speak
@@ -46,7 +46,7 @@ rr = (0...reindeer_ranking.length).to_a
 # -----------------------------------
 
 santas = []
-10000.times do
+10.times do
   santas << Santa.new(example_genders[genders.sample], example_ethnicities[ethnicities.sample])
 end
 
