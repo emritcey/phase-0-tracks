@@ -33,20 +33,20 @@ end
 
 # -----------------------------------
 example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
-genders = (0..example_genders.length).to_a
+genders = (0...example_genders.length).to_a
 
 example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A", "Filipino", "Norweigen"]
-ethnicities = (0..example_ethnicities.length).to_a
+ethnicities = (0...example_ethnicities.length).to_a
 
 example_cookies = ["snickerdoodle", "chocolate chip", "sugar", "lemon", "frosted"]
-cookies = (0..example_cookies.length).to_a
+cookies = (0...example_cookies.length).to_a
 
 reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-rr = (0..reindeer_ranking.length).to_a
+rr = (0...reindeer_ranking.length).to_a
 # -----------------------------------
 
 santas = []
-2.times do
+10000.times do
   santas << Santa.new(example_genders[genders.sample], example_ethnicities[ethnicities.sample])
 end
 
