@@ -5,7 +5,7 @@ class Santa
 	def initialize(gender, ethnicity)
 		@gender = gender
 		@ethnicity = ethnicity 
-		@age = (0..140).to_a
+		@age = (0..140).to_a.sample
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		#puts "Initializing Santa instance ..."
 	end
@@ -20,7 +20,7 @@ class Santa
 	
 	def celebrate_birthday
 	
-		new_age = @age.sample + 1 
+		new_age = @age + 1 
 	end 
 	
 	def get_mad_at(reindeer)
@@ -46,7 +46,7 @@ rr = (0...reindeer_ranking.length).to_a
 # -----------------------------------
 
 santas = []
-10.times do
+1.times do
   santas << Santa.new(example_genders[genders.sample], example_ethnicities[ethnicities.sample])
 end
 
@@ -55,5 +55,6 @@ santas.each do |name|
 	puts "Santa says: #{name.speak}. #{name.eat_milk_and_cookies(example_cookies[cookies.sample])} "
 	puts  "Age: #{name.celebrate_birthday}. Gender: #{name.gender}. Ethnicity: #{name.ethnicity}."
 		name.get_mad_at(reindeer_ranking[rr.sample])
+	
 	puts "----------------------------------- "
 end
