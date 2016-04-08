@@ -67,7 +67,7 @@ def print_list(list)
     p "#{groceries}: #{quantity} "
   end
 
-  
+
 end
 
 # p print_list(our_list)
@@ -82,4 +82,34 @@ remove_item(gps_list, "lemonade")
 update_item(gps_list, "ice cream", 1)
 
 print_list(gps_list)
- 
+
+
+# # ------------------------------------
+# What did you learn about pseudocode from working on this challenge?
+# We definitely did most of our pseudocoding out loud, versus physically on the page. 
+# I think we learned that it is important to figure out intentions before beginning to 
+#write out the code itself. 
+
+# What are the tradeoffs of using arrays and hashes for this challenge?
+# We used a hash because we wanted to store each item with it's quantity in the list. If we had used an
+# array, I am not sure we could have held that information unless we had used 2 arrays that were linked together
+# but the trade off there would have been that it is messier and less organized code. 
+
+# What does a method return?
+# A method returns edited information on the list that we were working with .
+
+# What kind of things can you pass into methods as arguments?
+# Strings, integers, floats, booleans, and any of these in variable form . 
+
+# How can you pass information between methods?
+# We started this by using a global variable, but later decided it made things more complicated,
+# and removed it. We used the extra parameter of "list" so that it was easier to pass the same 
+# information through different methods without a class. 
+
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+ # This challenge definitely showed why a class is so helpful! Since we didn't use one in the 
+ # challenge, it was trickier and that showed why the class is so important and useful. 
+
+
+
+
