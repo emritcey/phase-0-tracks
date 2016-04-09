@@ -1,11 +1,12 @@
 class Car
 	attr_reader :make, :year
-	attr_accessor :milage
+	attr_accessor :milage, :destination
 
 	def initialize(make, year)
 		@make = make
 		@year = year
-		@milage = 0
+		@milage = 7
+		@destination = ""
 		puts "Initializing new car..."
 	end
 
@@ -15,12 +16,10 @@ class Car
 
 	def miles(number)
 		@milage += number
-		puts "Drove #{number} miles today. New milage: #{@milage}"
-		
 	end
 
 	def destination(destin)
-		puts "I am driving to #{destin}."
+		@destination = destin
 	end
 end
 
@@ -35,22 +34,23 @@ end
 # puts steve.destination("Nowhere.")
 # ===========================================
 
-new_cars = 
+new_car = []
 
 puts "How many cars would you like to create?"
 	number = gets.chomp.to_i
 
 number.times do 
-	new_cars << Car.new("audi", 2016)
+	new_car = Car.new("Audi", 2016)
+	
+	puts "How many miles have you driven?"
+	driven = gets.chomp.to_i
 
-	puts "What make of car?"
-	make = gets.chomp.downcase
-	new_cars[:brand] = make
-
-	puts "What year is the car?"
-	year = gets.chomp.to_i
-	new_cars[:car_year] = year
-
+	puts "What is your destination?"
+	place = gets.chomp
+	
+	p "#{new_car.sound} This #{new_car.make} #{new_car.year} has a milage of: #{new_car.miles(driven)} and is heading to #{new_car.destination(place)}!"
 end
 
-p new_cars
+
+
+
