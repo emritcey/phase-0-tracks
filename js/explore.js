@@ -11,4 +11,12 @@ function reverse(string) {
 	return reverse_string;
 }
 // print in console
-console.log(reverse("Hello"));
+var reverse_hello = (reverse("Hello"));
+
+
+if (1 == 1) {
+	console.log("Your result is " + reverse_hello +"!");
+}
+else {
+	console.log("Sorry!");
+}
