@@ -4,6 +4,7 @@
 # When there's more than one suspect who could have
 # committed the crime, add additional calls to prove it.
 
+
 a = "iNvEsTiGaTiOn"
 puts a[0].capitalize + a[1..-1]
 # # => “InVeStIgAtIoN”
@@ -35,11 +36,13 @@ puts "Elementary  ,    my   dear      Watson!".split.join(" ")
 # => “Elementary, my dear Watson!”
 
 puts "z".ord
+
 # => 122 
 # (What is the significance of the mber 122 in relation to the character z?)
 
 puts "How many times does the letter ‘a’ appear in this string?".count("a")
 #=> 4
+
 
 
 
