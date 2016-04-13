@@ -21,3 +21,35 @@ color_Horses[horse_Names[i]] = colors[i];
 }
 
 console.log(color_Horses)
+
+/////////////////////////////////////////
+
+function Car(name, color, size){
+
+  console.log("Our new car:", this);
+  
+  this.name = name;
+  this.color = color;
+  this.size = size;
+  
+  this.honk = function() { console.log("Honk! Honk!"); };
+  
+  console.log("CAR INITIALIZATION COMPLETE!");
+}
+  
+  console.log("Let's build a car...");
+  
+  var makeCar = new Car("Steve", "Purple", "big");
+  console.log(makeCar.name + " the car");
+
+  console.log("Our car can honk");
+  makeCar.honk();
+  console.log("----");
+  
+  var makeAnotherCar = new Car("Theron", "pink", "small");
+  console.log(makeAnotherCar.name + " the car");
+  console.log("Our car can honk");
+  makeAnotherCar.honk();
+  console.log("----");
+  
+ 
