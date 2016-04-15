@@ -48,3 +48,22 @@ var longest = (list[numbers.indexOf(third_Arr[0])])
 // print 
 console.log("The longest word is: " + longest + ".");
 
+
+//// 
+// POTENTIAL SOLUTION IDEAS: 
+
+// a = [4, 3, 2, 5, 15]
+
+// b = a[0]
+
+// a.each do |i|
+// 	until a.length-1 do 
+// 		if b > a[i+1]
+// 			b = b 
+// 		else
+// 			b = a[i+1]
+// 		end 
+// 	end
+// end
+
+
