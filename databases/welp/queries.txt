@@ -1,0 +1,35 @@
+2. You've joined two tables before. How do you join three?
+
+SELECT * FROM users INNER JOIN 
+   ...> (businesses INNER JOIN reviews
+   ...> ON reviews.business_id = businesses.id)
+   ...> ON reviews.user_id = users.id;
+1|Bradford|Pitt|3|The Beagle Nightclub|1|5|Dessert was great!|3|1
+2|Mandy|Kaling|2|Amir's Towing|2|1|broke my car|2|2
+4|Steven|Wonder|1|Grundy Hollow Wedding Chapel|3|3|Just fine.|1|4
+
+
+3.There are some repetitive columns if we choose to view all fields. Choose instead to just view the user's names, the business name, the star rating, and the comment.
+
+sqlite> SELECT users.fname, users.lname, businesses.bname, reviews.stars, reviews.comment
+   ...> FROM users
+   ...> INNER JOIN
+   ...> (businesses INNER JOIN reviews
+   ...> ON reviews.business_id = businesses.id)
+   ...> ON reviews.user_id = users.id
+   ...> ;
+Bradford|Pitt|The Beagle Nightclub|5|Dessert was great!
+Mandy|Kaling|Amir's Towing|1|broke my car
+Steven|Wonder|Grundy Hollow Wedding Chapel|3|Just fine.
+
+
+4.How do you view the data of all three tables for just one particular business? 
+
+ SELECT users.fname, users.lname, businesses.bname, reviews.stars, reviews.comment
+   ...> FROM users                                              
+   ...> INNER JOIN
+   ...> (businesses INNER JOIN reviews
+   ...> ON reviews.business_id = businesses.id)                                    ...> ON reviews.user_id = users.id
+   ...> WHERE business_id = 1;
+Steven|Wonder|Grundy Hollow Wedding Chapel|3|Just fine.
+
