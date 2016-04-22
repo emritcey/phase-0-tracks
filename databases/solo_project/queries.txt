@@ -1,0 +1,62 @@
+1. Display the information in one table (either table is fine).
+
+sqlite> SELECT * FROM books;
+1|Pride and Prejudice|1813|false|3
+2|Harry Potter and the Sorcerer's Stone|1997|true|2
+3|The Sun Also Rises|1926|true|1
+4|For Whom the Bell Tolls|1940|false|1
+5|Cat's Cradle|1963|true|4
+6|Emma|1815|true|3
+
+sqlite> SELECT * FROM authors;
+1|Ernest Hemingway
+2|J.K. Rowling
+3|Jane Austen
+4|Kurt Vonnegut
+
+-----------------------------------------------------------
+2. Update an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> UPDATE books SET good="true" WHERE title="For Whom the Bell Tolls";
+
+sqlite> SELECT * FROM books;
+1|Pride and Prejudice|1813|false|3
+2|Harry Potter and the Sorcerer's Stone|1997|true|2
+3|The Sun Also Rises|1926|true|1
+4|For Whom the Bell Tolls|1940|true|1
+5|Cat's Cradle|1963|true|4
+6|Emma|1815|true|3
+-----------------------------------------------------------
+3. Display the information in both tables using one query.
+
+sqlite> SELECT * FROM books, authors WHERE books.author_id = authors.id;
+
+1|Pride and Prejudice|1813|false|3|3|Jane Austen
+2|Harry Potter and the Sorcerer's Stone|1997|true|2|2|J.K. Rowling
+3|The Sun Also Rises|1926|true|1|1|Ernest Hemingway
+4|For Whom the Bell Tolls|1940|true|1|1|Ernest Hemingway
+5|Cat's Cradle|1963|true|4|4|Kurt Vonnegut
+6|Emma|1815|true|3|3|Jane Austen
+
+-----------------------------------------------------------
+4. Display a narrower selection of columns (fewer columns than all of them, in other words) from both tables using one query.
+
+sqlite> SELECT books.title, authors.name,books.year_written, books.good FROM books JOIN authors ON books.author_id = authors.id;
+
+Pride and Prejudice|Jane Austen|1813|false
+Harry Potter and the Sorcerer's Stone|J.K. Rowling|1997|true
+The Sun Also Rises|Ernest Hemingway|1926|true
+For Whom the Bell Tolls|Ernest Hemingway|1940|true
+Cat's Cradle|Kurt Vonnegut|1963|true
+Emma|Jane Austen|1815|true
+
+-----------------------------------------------------------
+5. Delete an item that meets some condition (you can choose a condition that makes sense).
+
+sqlite> DELETE FROM books WHERE title = "Cat's Cradle";
+sqlite> SELECT * FROM books;
+1|Pride and Prejudice|1813|false|3
+2|Harry Potter and the Sorcerer's Stone|1997|true|2
+3|The Sun Also Rises|1926|true|1
+4|For Whom the Bell Tolls|1940|true|1
+5|Emma|1815|true|3
