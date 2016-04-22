@@ -66,4 +66,18 @@ console.log("The longest word is: " + longest + ".");
 // 	end
 // end
 
+// function 
+
+// // set to first as longest string so far. 
+
+// // for loop, iterate each time for each item in list
+// // setting first variable to current
+// // get the next element in the array
+// / if statement to compare each string with new (current vs next)
+// // if longer reset, if not, do oppossite
+// // console log 
+
+
+
+
 
