@@ -60,3 +60,31 @@ sqlite> SELECT * FROM books;
 3|The Sun Also Rises|1926|true|1
 4|For Whom the Bell Tolls|1940|true|1
 5|Emma|1815|true|3
+
+-----------------------------------------------------------
+RELEASE 3 - What other kinds of joins are there? 
+Inner Join - join all overlapping. 
+
+sqlite> SELECT books.title, authors.name FROM books INNER JOIN authors ON books.author_id = authors.id;
+
+Pride and Prejudice|Jane Austen
+Harry Potter and the Sorcerer's Stone|J.K. Rowling
+The Sun Also Rises|Ernest Hemingway
+For Whom the Bell Tolls|Ernest Hemingway
+Emma|Jane Austen
+
+Left Join - join all items on the left list. 
+sqlite> SELECT books.title, authors.name FROM books LEFT JOIN authors ON books.author_id = authors.id;
+
+Pride and Prejudice|Jane Austen
+Harry Potter and the Sorcerer's Stone|J.K. Rowling
+The Sun Also Rises|Ernest Hemingway
+For Whom the Bell Tolls|Ernest Hemingway
+Emma|Jane Austen
+
+Right Join
+NOT SUPPORTED ON LITE
+Full Join
+NOT SUPPORTED ON LITE
+
+
