@@ -37,6 +37,26 @@ get '/students' do
   response
 end
 
+get '/contact' do 
+  "5470 S Hyde Park Blvd. Chicago, IL 60615"
+  end
+
+get '/great_job/?:name?' do
+  name = params[:name]
+  if name 
+    "Good Job, #{name}!"
+  else
+    "Good Job!"
+  end
+end
+
+get '/add/:num/:numm' do
+  num = params[:num].to_i
+  numm = params[:numm].to_i
+  nummm = num + numm
+  "#{params[:num]} + #{params[:numm]} = #{nummm}"
+end
+
 # write a GET route that retrieves
 # a particular student
 
@@ -44,3 +64,10 @@ get '/students/:id' do
   student = db.execute("SELECT * FROM students WHERE id=?", [params[:id]])[0]
   student.to_s
 end
+
+get '/search/:name' do 
+  student = db.execute("SELECT * FROM students WHERE name=?", [params[:name]])[0]
+  student.to_s
+end
+
+
